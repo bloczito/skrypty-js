@@ -23,10 +23,6 @@ router.get('/', (req, res) => {
 
         return res.send(shuffleArray(PRODUCTS));
     }
-
-
-
-
 });
 
 router.post('/', (req, res) => {
