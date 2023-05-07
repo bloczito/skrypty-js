@@ -9,22 +9,22 @@
 
 ## Types
 #### Category
-```json
+```typescript
 {
-  "value": "string",
-  "label": "string"
+  value: string;
+  label: string;
 }
 ```
 
 #### Product
-```json
+```typescript
 {
-  "id": "string",
-  "name": "string",
-  "price": "number",
-  "category": "string",
-  "description": "string",
-  "image": "string"
+  id: string;
+  name: string;
+  price: number;
+  category: string;
+  description: string | undefined;
+  image: string;
 }
 ```
 
@@ -40,18 +40,18 @@ Based on the value parameter, returns a category as Category
 
 #### POST /categories
 Creates a new category. Body:
-```json
+```typescript
 {
-  "value": "string",
-  "label": "string"
+  value: string;
+  label: string;
 }
 ```
 
 #### PUT /categories/:value
 Updates a category. Body:
-```json
+```typescript
 {
-  "label": "string"
+  label: string
 }
 ```
 
